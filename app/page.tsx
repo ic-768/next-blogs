@@ -1,18 +1,6 @@
-import { useEffect } from "react";
-
 import Image from "next/image";
 
-import "../global.css";
-
 export default function Home() {
-  const lsdfj = (arg: string) => {};
-
-  const test = "2";
-
-  useEffect(() => {
-    lsdfj(test);
-  }, [lsdfj]);
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
