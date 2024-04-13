@@ -4,8 +4,6 @@ import { Blog } from "./definitions";
 
 export async function fetchBlogs(): Promise<Blog[]> {
   try {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
-
     const data = [1, 2, 3, 4, 5].map(() => ({
       author: faker.person.fullName(),
       blog: faker.lorem.paragraphs({ min: 3, max: 8 }),
