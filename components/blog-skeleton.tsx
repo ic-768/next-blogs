@@ -2,10 +2,10 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 export default function BlogSkeleton() {
   return (
-    <Card className="h-[29rem] w-[27rem]">
-      <CardHeader className="h-full">
+    <Card className="w-[18rem]">
+      <CardHeader className="flex h-full flex-col gap-2">
         <div className="overflow-hidden">
-          <div className="h-[250px] w-[350px] animate-pulse bg-gray-300"></div>
+          <div className="h-[156px] w-[208px] animate-pulse bg-gray-300"></div>
         </div>
         <CardTitle className="h-6 w-full animate-pulse bg-gray-300" />
         <CardDescription className="!mt-auto flex flex-col gap-2">

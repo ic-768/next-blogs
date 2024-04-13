@@ -1,3 +1,4 @@
+"use client";
 import { Suspense } from "react";
 
 import BlogList from "@/components/blog-list";

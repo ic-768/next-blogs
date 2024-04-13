@@ -21,27 +21,29 @@ export default function BlogCard({ title, author, date, image }: Blog) {
 
   return (
     <MotionLink
-      href="test"
+      href="blog"
       initial="initial"
       animate="initial"
       whileHover="animate"
     >
-      <Card className="h-[29rem] w-[27rem]">
-        <CardHeader className="h-full">
+      <Card className="w-[18rem]">
+        <CardHeader className="flex h-full flex-col gap-2">
           <div className="overflow-hidden">
             <motion.div variants={arrow}>
               <Image
                 src={image}
-                width={350}
                 height={250}
+                width={350}
                 alt="Picture of the author"
               />
             </motion.div>
           </div>
           <CardTitle className="line-clamp-2 text-xl">{title}</CardTitle>
           <CardDescription className="!mt-auto flex flex-col">
-            <span className="text-base">{author}</span>
             <span>{date.toDateString()}</span>
+            <span>
+              by <span className="underline">{author}</span>
+            </span>
           </CardDescription>
         </CardHeader>
       </Card>
