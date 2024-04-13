@@ -1,14 +1,16 @@
-import BlogCard from "@/components/ui/blog-card";
-import { fetchBlogs } from "@/lib/data";
+import { Suspense } from "react";
 
-export default async function Home() {
-  const data = await fetchBlogs();
+import BlogList from "@/components/blog-list";
+import BlogSkeleton from "@/components/blog-skeleton";
+
+export default function Home() {
+  const skeleton = [1, 2, 3, 4, 5].map((i) => <BlogSkeleton key={i} />);
 
   return (
     <div className="flex flex-wrap gap-2">
-      {data.map((d, i) => (
-        <BlogCard key={d.title + i} {...d} />
-      ))}
+      <Suspense fallback={skeleton}>
+        <BlogList />
+      </Suspense>
     </div>
   );
 }

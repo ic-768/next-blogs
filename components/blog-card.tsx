@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   Card,
@@ -10,6 +11,8 @@ import {
 } from "@/components/ui/card";
 import { Blog } from "@/lib/definitions";
 
+const MotionLink = motion(Link);
+
 export default function BlogCard({ title, author, date, image }: Blog) {
   const arrow = {
     initial: { scale: 1, transition: { duration: 0.3 } },
@@ -17,7 +20,12 @@ export default function BlogCard({ title, author, date, image }: Blog) {
   };
 
   return (
-    <motion.div initial="initial" animate="initial" whileHover="animate">
+    <MotionLink
+      href="test"
+      initial="initial"
+      animate="initial"
+      whileHover="animate"
+    >
       <Card className="h-[29rem] w-[27rem]">
         <CardHeader className="h-full">
           <div className="overflow-hidden">
@@ -25,7 +33,7 @@ export default function BlogCard({ title, author, date, image }: Blog) {
               <Image
                 src={image}
                 width={350}
-                height={350}
+                height={250}
                 alt="Picture of the author"
               />
             </motion.div>
@@ -37,6 +45,6 @@ export default function BlogCard({ title, author, date, image }: Blog) {
           </CardDescription>
         </CardHeader>
       </Card>
-    </motion.div>
+    </MotionLink>
   );
 }

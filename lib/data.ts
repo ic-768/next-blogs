@@ -1,8 +1,12 @@
 import { faker } from "@faker-js/faker";
 
 import { Blog } from "./definitions";
+import { mockData } from "./mockData";
 
 export async function fetchBlogs(): Promise<Blog[]> {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+  return mockData;
+
   try {
     const data = [1, 2, 3, 4, 5].map(() => ({
       author: faker.person.fullName(),
