@@ -1,7 +1,8 @@
 export type Blog = {
   author: string;
-  blog: string;
+  content: string;
   title: string;
   date: Date;
   image: string;
+  id: string;
 };

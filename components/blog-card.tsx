@@ -13,7 +13,7 @@ import { Blog } from "@/lib/definitions";
 
 const MotionLink = motion(Link);
 
-export default function BlogCard({ title, author, date, image }: Blog) {
+export default function BlogCard({ title, author, date, image, id }: Blog) {
   const arrow = {
     initial: { scale: 1, transition: { duration: 0.3 } },
     animate: { scale: 1.12, transition: { duration: 0.3 } },
@@ -21,7 +21,7 @@ export default function BlogCard({ title, author, date, image }: Blog) {
 
   return (
     <MotionLink
-      href="blog"
+      href={id}
       initial="initial"
       animate="initial"
       whileHover="animate"

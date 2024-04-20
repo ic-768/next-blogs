@@ -5,7 +5,7 @@ export default function Loading() {
   return (
     <ClipLoader
       className="absolute inset-0 m-auto"
-      size={150}
+      size={70}
       aria-label="Loading Spinner"
       data-testid="loader"
     />
