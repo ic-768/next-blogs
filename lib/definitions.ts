@@ -1,6 +1,6 @@
 export type Blog = {
   author: string;
-  content: string;
+  sections: { title: string; content: string }[];
   title: string;
   date: Date;
   image: string;

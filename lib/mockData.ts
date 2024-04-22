@@ -4,69 +4,89 @@ export const mockData: Blog[] = [
   {
     id: "1e2394fc-6edd-4d62-ac18-7d456a4aec85",
     author: "Thelma Jacobson",
-    content:
-      "Verto non copiose vilis attonbitus aequitas facere vox. Culpo cetera campana ambitus comedo. Vester spectaculum truculenter subvenio deorsum tergo umerus.\n" +
-      "Absens compono spes centum audax. Amo corona summopere subnecto caecus. Laboriosam subiungo volubilis demoror tabella demoror dedico conventus argumentum adopto.\n" +
-      "Clementia subnecto conspergo claustrum acsi cursim dedico adopto. Nisi coepi inflammatio. Thesis convoco sodalitas.",
-    title: "Corrigo tamdiu tabesco modi coma antea assumenda viriliter.",
+    sections: [
+      {
+        title: "Introduction: Embracing the Kitchen",
+        content:
+          "The kitchen is not just a room—it's a place where magic happens, where ingredients transform into delectable delights, and where memories are made. Whether you're a complete novice or an experienced home cook, there's always something new to learn and explore in the world of cooking.",
+      },
+      {
+        title: "Chapter 1: Setting the Stage",
+        content:
+          "Before we dive into the culinary abyss, let's take a moment to set the stage. Stock your pantry with essentials like olive oil, spices, and grains. Equip yourself with the necessary tools—a sharp knife, sturdy cutting boards, and quality cookware. With these basics in place, you're ready to unleash your inner chef.",
+      },
+      {
+        title: "Chapter 2: Mastering the Fundamentals",
+        content:
+          "Cooking is like any other skill—it requires practice, patience, and a willingness to learn. Start by mastering the fundamental techniques: chopping, sautéing, simmering, and baking. Practice these skills with simple recipes like omelets, soups, and roasted vegetables until they become second nature.",
+      },
+      {
+        title: "Chapter 3: Exploring Flavorful Horizons",
+        content:
+          "One of the most exciting aspects of cooking is exploring the vast world of flavors. From the spicy heat of Thai curry to the comforting warmth of Italian pasta, there's a whole universe of taste sensations waiting to be discovered. Experiment with herbs, spices, and ingredients from different cuisines to create dishes that are uniquely your own.",
+      },
+      {
+        title: "Chapter 4: Honoring Freshness and Seasonality",
+        content:
+          "In the age of convenience, it's easy to forget the importance of fresh, seasonal ingredients. But there's something truly magical about cooking with produce that's ripe, vibrant, and bursting with flavor. Visit your local farmers' market or join a community-supported agriculture program to connect with the source of your food and support local growers.",
+      },
+      {
+        title: "Chapter 5: Sharing the Love",
+        content:
+          "Cooking is about more than just feeding yourself—it's about nourishing your soul and sharing the love with others. Invite friends and family to join you in the kitchen, and revel in the joy of preparing a meal together. Whether it's a cozy dinner party or a backyard barbecue, the act of sharing food creates bonds that last a lifetime.",
+      },
+      {
+        title: "Conclusion: The Journey Continues",
+        content:
+          "As we reach the end of our culinary odyssey, remember that the journey is just beginning. There are endless recipes to try, techniques to master, and flavors to savor. So, don your apron, sharpen your knives, and let the adventure unfold. Happy cooking!",
+      },
+    ],
+    title: "Unveiling Culinary Delights: A Beginner's Odyssey in the Kitchen",
     date: new Date("2022-11-22T03:29:50.659Z"),
     image: "https://picsum.photos/seed/FaNSsy/640/480",
   },
   {
     id: "0ad0d868-1545-4ea1-b754-51231dc1f6bf",
     author: "Guillermo Jast",
-    content:
-      "Cohaero doloremque sophismata velociter molestias conduco urbanus tam labore illum. Venio verus caelum valeo absque ancilla. Annus desino addo trucido.\n" +
-      "Defessus quidem degero alias confero astrum tabernus cibo utpote. Solum ea tenax. Confero antiquus ultra delicate.\n" +
-      "Acies angelus cuius umbra curiositas crapula attonbitus sapiente summisse tubineus. Depromo decerno alii speculum apostolus animi. Vitium abscido alii magni vaco volva.\n" +
-      "Sint thesis sui voveo vorago verbera officia deludo. Peccatus alioqui caterva timidus talis truculenter assumenda. Talis culpa earum.\n" +
-      "Adulescens cupiditas suspendo viridis copiose optio constans. Deprecator doloribus sono magni maxime summa viriliter corrumpo. Cognatus defungo decimus laborum sonitus.\n" +
-      "Assentator totus verumtamen distinctio sunt architecto. Vel villa talio terra umbra. Inflammatio conturbo commemoro corporis.\n" +
-      "Suasoria caterva aegre delinquo ubi auxilium. Ultra audentia capio dolor vitium. Volubilis aestas tamisium varius rerum.",
-    title: "Capitulus totidem timidus sophismata.",
+    sections: [
+      {
+        title: "Introduction: Embracing Photography",
+        content:
+          "Photography is not just about taking pictures—it's about capturing moments, telling stories, and preserving memories. Whether you're a professional photographer or an amateur enthusiast, the world of photography offers endless opportunities for creativity and self-expression.",
+      },
+      {
+        title: "Chapter 1: Understanding the Basics",
+        content:
+          "Before you can master the art of photography, it's essential to understand the basics. Learn about composition, lighting, and exposure. Experiment with different camera settings and techniques to see how they affect your photos. With a solid foundation in place, you'll be ready to take your photography to the next level.",
+      },
+      {
+        title: "Chapter 2: Exploring Different Styles",
+        content:
+          "Photography is a diverse art form with many different styles and genres. From landscape photography to portrait photography, street photography to wildlife photography, there's something for everyone to explore. Find the styles that resonate with you and experiment with different techniques to develop your own unique voice.",
+      },
+      {
+        title: "Chapter 3: Mastering the Tools",
+        content:
+          "In the digital age, photographers have a wealth of tools at their disposal. From DSLR cameras to smartphone cameras, photo editing software to online sharing platforms, the possibilities are endless. Take the time to familiarize yourself with your equipment and software, and don't be afraid to try new things.",
+      },
+      {
+        title: "Chapter 4: Finding Inspiration",
+        content:
+          "Inspiration can come from anywhere and everywhere. Keep your eyes open for interesting scenes, unique perspectives, and fleeting moments. Study the work of other photographers, both past and present, and let their creativity inspire your own. The more you immerse yourself in the world of photography, the more inspiration you'll find.",
+      },
+      {
+        title: "Chapter 5: Telling Stories Through Images",
+        content:
+          "Photography has the power to evoke emotions, spark imagination, and tell stories without words. Use your camera to capture the essence of a moment, the beauty of a landscape, or the character of a person. Pay attention to details, composition, and lighting to convey the mood and message of your images.",
+      },
+      {
+        title: "Conclusion: The Journey Continues",
+        content:
+          "As you continue on your photographic journey, remember that there's always more to learn and explore. Don't be afraid to push yourself out of your comfort zone, try new techniques, and experiment with different styles. The world is full of beauty and wonder, waiting to be captured through your lens. Happy shooting!",
+      },
+    ],
+    title: "The Art of Photography: Capturing Moments in Time",
     date: new Date("2022-05-25T19:53:35.246Z"),
     image: "https://picsum.photos/seed/NubcH/640/480",
-  },
-  {
-    id: "ce8d82b5-c382-41e0-944b-c63dba4e7032",
-    author: "Carlos Blick",
-    content:
-      "Communis ascit tabernus undique suasoria acceptus conculco. Degenero velum correptius arbustum ubi curtus despecto autus. Comminor certus vesco complectus administratio capto.\n" +
-      "Volaticus solio labore templum uberrime paens aliqua. Desidero commodo voveo. Denuo sono certus eveniet vestrum denego solio demoror.\n" +
-      "Conscendo vitium conservo cupiditate fugit cedo. Ullus subito recusandae demulceo adhaero bellicus conculco. Tenuis occaecati ante bellum comptus.\n" +
-      "Adopto ratione collum cumque ea. Sordeo quisquam comptus commemoro cernuus spargo. Inventore artificiose thymbra tutis suadeo.\n" +
-      "Cohaero tener aeger synagoga carbo sequi spiculum. Dapifer defetiscor soluta. Timor confido timor cervus aiunt coniecto.",
-    title: "Velit volubilis certus aufero vigor tredecim.",
-    date: new Date("2022-10-08T17:52:03.782Z"),
-    image: "https://picsum.photos/seed/vehTrGtz/640/480",
-  },
-  {
-    id: "9ffeebfd-15ee-48c9-b7de-a533ca0af1d6",
-    author: "Ms. Patti Rolfson DVM",
-    content:
-      "Vito ipsa colligo tamquam sordeo acerbitas. Vitiosus thalassinus repellat amoveo usque tyrannus. Arguo ambitus nisi anser beneficium defendo tametsi.\n" +
-      "Voco vitium magnam a. Vesco sui quidem amoveo. Tabula temeritas aestivus stella.\n" +
-      "Atque tertius adfero aptus cito attollo sequi tergo. Thorax capitulus assumenda claudeo ustilo. Paens ventus tres molestiae demum uterque sonitus vitiosus.\n" +
-      "Quam armarium maiores. Strues caute apud quam cursus. Adduco complectus ex undique adinventitias aestivus timor sopor.\n" +
-      "Statim substantia cruciamentum volaticus claustrum demoror defetiscor tam. Stabilis aer clamo vero credo virga. Quisquam at quasi.",
-    title: "Debilito credo stipes spargo cogo carmen despecto quo optio.",
-    date: new Date("2023-11-05T11:13:40.675Z"),
-    image: "https://picsum.photos/seed/NEtkdE0z3/640/480",
-  },
-  {
-    id: "1dc3553e-c812-4748-bb31-c4fdd7e67ea9",
-    author: "Edith Haag",
-    content:
-      "Trans ater denuo vix caste bibo. Considero spectaculum acer antea tibi. Dedico decet antepono pel cras enim.\n" +
-      "Alienus nostrum beneficium quae amplus vinum. Vae crebro ambitus totus certe delicate talis una. Desipio templum velum administratio audeo molestiae claustrum attero conscendo.\n" +
-      "Absorbeo comis corroboro aut compello. Aiunt tantum valeo confido beatae in. Vester assumenda angulus.\n" +
-      "Cubo vitium sonitus. Casus vae tergeo vergo paens consequatur deprimo. Temeritas argentum fuga nisi strues.\n" +
-      "Textilis utroque commodo rerum pel. Degusto deorsum considero ante thorax umbra reprehenderit textus cado. Careo vaco terebro.\n" +
-      "Conventus coma id bibo subvenio. Sponte aggero carpo. Verus bellicus sodalitas ambitus vito.\n" +
-      "Videlicet statim ager vero. Ara sufficio deripio temptatio dolorum comitatus adopto vorax. Ars doloremque ars.\n" +
-      "Vulgivagus excepturi comptus celer crastinus thorax. Ultra sumptus cimentarius. Unde vilicus suffragium virgo cohors.",
-    title: "Aperiam tepesco tempus.",
-    date: new Date("2022-11-23T10:23:11.569Z"),
-    image: "https://picsum.photos/seed/iGLwmkqF4k/640/480",
   },
 ];
