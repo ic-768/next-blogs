@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
+
+import logoImage from "../public/logo.jpg";
 
 import "./globals.css";
+
+import { Button } from "@/components/ui/button";
+import Sun from "@/components/ui/icons/sun";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +25,15 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className={inter.className}>
-        <div className="p-8">{children}</div>
+        <header className="sticky top-0 z-10 flex justify-between gap-4 border-b border-zinc-300/25 bg-white/75 p-6 backdrop-blur-md">
+          <Link href="/">
+            <Image className="w-20 rounded-md" src={logoImage} alt="logo" />
+          </Link>
+          <Button variant="outline">
+            <Sun />
+          </Button>
+        </header>
+        <div className="flex min-h-full flex-col p-8">{children}</div>
       </body>
     </html>
   );
