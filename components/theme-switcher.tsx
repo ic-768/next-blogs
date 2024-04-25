@@ -17,7 +17,7 @@ export default function ThemeSwitcher() {
   if (!isMounted) return null;
 
   return (
-    <div className="flex items-center gap-2" suppressHydrationWarning>
+    <div className="flex items-center gap-2">
       <Sun />
       <Switch
         checked={resolvedTheme === "dark"}
