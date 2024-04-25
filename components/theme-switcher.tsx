@@ -2,37 +2,28 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
-import { Button } from "./ui/button";
+import Moon from "./ui/icons/moon";
 import Sun from "./ui/icons/sun";
+import { Switch } from "./ui/switch";
 
 export default function ThemeSwitcher() {
-  const [mounted, setMounted] = useState(true);
   const { setTheme, resolvedTheme } = useTheme();
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setIsMounted(true);
   }, []);
 
-  if (!mounted) {
-    return (
-      <Button variant="outline">
-        <Sun />
-      </Button>
-    );
-  }
+  if (!isMounted) return null;
 
-  console.log(resolvedTheme);
-  if (resolvedTheme === "dark") {
-    return (
-      <Button onClick={() => setTheme("light")} variant="outline">
-        <Sun />
-      </Button>
-    );
-  } else {
-    return (
-      <Button onClick={() => setTheme("dark")} variant="outline">
-        light
-      </Button>
-    );
-  }
+  return (
+    <div className="flex items-center gap-2" suppressHydrationWarning>
+      <Sun />
+      <Switch
+        checked={resolvedTheme === "dark"}
+        onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      />
+      <Moon />
+    </div>
+  );
 }
