@@ -36,7 +36,7 @@ export default function BlogCard({ title, author, date, image, id }: Blog) {
     <Card className="w-[18rem]">
       <CardHeader className="flex h-full flex-col gap-2">
         <MotionLink
-          href={id}
+          href={`blog/${id}`}
           initial="initial"
           animate="initial"
           whileHover="animate"

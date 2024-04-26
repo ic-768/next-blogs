@@ -1,9 +1,30 @@
-import { Blog } from "./definitions";
+import { Author, Blog } from "./definitions";
 
-export const mockData: Blog[] = [
+export const authorData: Author[] = [
+  {
+    id: "0",
+    name: "Thelma Jacobson",
+    image:
+      "https://picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg",
+    subtitle: "Journalist and Fiction Writer",
+    description:
+      "I'm a versatile writer who delves into both journalism and fiction writing. With a keen eye for detail and a vivid imagination, I bring stories to life, capturing the essence of diverse cultures and human experiences.",
+  },
+  {
+    id: "1",
+    image:
+      "https://picsum.photos/id/349/3264/2176.jpg?hmac=WNt0QoaZyFRaiL5yitDV4LOXzdHV5Z9tHUxbc6KdBSY",
+    name: "Guillermo Jast",
+    subtitle: "Entrepreneur and Nonfiction Author",
+    description:
+      "I'm an entrepreneur and nonfiction author, passionate about sharing insights and strategies for personal and professional growth. Drawing from my own experiences and research, I aim to empower others to achieve their goals and navigate the complexities of modern life.",
+  },
+];
+
+export const blogData: Blog[] = [
   {
     id: "1e2394fc-6edd-4d62-ac18-7d456a4aec85",
-    author: { name: "Thelma Jacobson", id: "thelma-jacobson" },
+    author: { name: "Thelma Jacobson", id: "0" },
     sections: [
       {
         title: "Introduction: Embracing the Kitchen",
@@ -47,7 +68,7 @@ export const mockData: Blog[] = [
   },
   {
     id: "0ad0d868-1545-4ea1-b754-51231dc1f6bf",
-    author: { name: "Guillermo Jast", id: "guillermo-jast" },
+    author: { name: "Guillermo Jast", id: "1" },
     sections: [
       {
         title: "Introduction: Embracing Photography",

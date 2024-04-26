@@ -6,3 +6,11 @@ export type Blog = {
   image: string;
   id: string;
 };
+
+export type Author = {
+  id: string;
+  name: string;
+  image: string;
+  subtitle: string;
+  description: string;
+};

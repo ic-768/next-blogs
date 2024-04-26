@@ -4,8 +4,11 @@ import Image from "next/image";
 import { TracingBeam } from "@/components/ui/tracking-beam";
 import { fetchBlog } from "@/lib/data";
 
-export default async function Blog({ params }: { params: { blog: string } }) {
-  const id = params.blog;
+export default async function Blog({
+  params: { id },
+}: {
+  params: { id: string };
+}) {
   const blog = await fetchBlog(id);
 
   if (!blog) return;
@@ -27,7 +30,7 @@ export default async function Blog({ params }: { params: { blog: string } }) {
           src={image}
           height={250}
           width={350}
-          alt="Picture of the author"
+          alt="Picture for the blog"
         />
         {sections.map((s, i) => (
           <Fragment key={i}>
