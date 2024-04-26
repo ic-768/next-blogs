@@ -3,7 +3,7 @@ import { Blog } from "./definitions";
 export const mockData: Blog[] = [
   {
     id: "1e2394fc-6edd-4d62-ac18-7d456a4aec85",
-    author: "Thelma Jacobson",
+    author: { name: "Thelma Jacobson", id: "thelma-jacobson" },
     sections: [
       {
         title: "Introduction: Embracing the Kitchen",
@@ -47,7 +47,7 @@ export const mockData: Blog[] = [
   },
   {
     id: "0ad0d868-1545-4ea1-b754-51231dc1f6bf",
-    author: "Guillermo Jast",
+    author: { name: "Guillermo Jast", id: "guillermo-jast" },
     sections: [
       {
         title: "Introduction: Embracing Photography",

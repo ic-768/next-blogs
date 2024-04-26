@@ -1,5 +1,5 @@
 export type Blog = {
-  author: string;
+  author: { name: string; id: string };
   sections: { title: string; content: string }[];
   title: string;
   date: Date;

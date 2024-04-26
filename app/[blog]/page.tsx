@@ -19,7 +19,7 @@ export default async function Blog({ params }: { params: { blog: string } }) {
         <div className="flex flex-col text-lg">
           <span>{date.toDateString()}</span>
           <span>
-            by <span className="underline">{author}</span>
+            by <span className="underline">{author.name}</span>
           </span>
         </div>
         <Image
