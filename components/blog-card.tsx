@@ -23,6 +23,7 @@ export default function BlogCard({ title, author, date, image, id }: Blog) {
     <Card className="w-[18rem]">
       <CardHeader className="flex h-full flex-col gap-2">
         <MotionLink
+          className="flex flex-col gap-2"
           href={`/blog/${id}`}
           initial="initial"
           animate="initial"
@@ -33,8 +34,8 @@ export default function BlogCard({ title, author, date, image, id }: Blog) {
               <Image
                 className="rounded"
                 src={image}
-                height={250}
-                width={350}
+                height={156}
+                width={208}
                 alt="Picture of the author"
               />
             </motion.div>

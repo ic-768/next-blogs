@@ -1,6 +1,9 @@
+import { Suspense } from "react";
 import Image from "next/image";
 
-import { fetchAuthor, fetchPosts } from "@/lib/data";
+import BlogList from "@/components/blog-list";
+import BlogSkeleton from "@/components/blog-skeleton";
+import { fetchAuthor } from "@/lib/data";
 
 export default async function Author({
   params: { id },
@@ -9,12 +12,12 @@ export default async function Author({
 }) {
   const author = await fetchAuthor(id);
 
-  const posts = await fetchPosts(id);
-  const numPosts = posts.length;
-
   if (!author) return;
 
   const { name, image, description, subtitle } = author;
+
+  const skeleton = [1, 2, 3, 4, 5].map((i) => <BlogSkeleton key={i} />);
+  const fallback = <ul className="flex flex-wrap gap-2 pt-8">{skeleton}</ul>;
 
   return (
     <div className="flex flex-col items-center gap-4">
@@ -34,7 +37,11 @@ export default async function Author({
           {description}
         </p>
       </div>
-      <h2>{numPosts} posts</h2>
+      <div className="pt-6">
+        <Suspense fallback={fallback}>
+          <BlogList showCount id={id} />
+        </Suspense>
+      </div>
     </div>
   );
 }

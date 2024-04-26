@@ -1,8 +1,12 @@
+import clsx from "clsx";
+
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 export default function BlogSkeleton() {
+  const classes = clsx("w-[18rem]");
+
   return (
-    <Card className="w-[18rem]">
+    <Card className={classes}>
       <CardHeader className="flex h-full flex-col gap-2">
         <div className="overflow-hidden">
           <div className="h-[156px] w-[208px] animate-pulse bg-gray-300"></div>

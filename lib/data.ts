@@ -16,11 +16,7 @@ export async function fetchAuthor(id: string): Promise<Author | undefined> {
   return authorData.find((a) => a.id === id);
 }
 
-export async function fetchPosts(
-  id: string,
-): Promise<Pick<Blog, "id" | "title" | "image">[]> {
+export async function fetchBlogsById(id: string): Promise<Blog[]> {
   await new Promise((resolve) => setTimeout(resolve, 3000));
-  return blogData
-    .filter((b) => b.author.id === id)
-    .map((b) => ({ title: b.title, id: b.id, image: b.image }));
+  return blogData.filter((b) => b.author.id === id);
 }

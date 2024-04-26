@@ -30,7 +30,7 @@ export default async function Blog({ params }: { params: { id: string } }) {
           src={image}
           height={250}
           width={350}
-          alt="Picture of the author"
+          alt="Picture for the blog"
         />
         {sections.map((s, i) => (
           <Fragment key={i}>
