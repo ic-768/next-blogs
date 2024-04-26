@@ -18,7 +18,7 @@ export default async function Author({
       <Image
         className="self-center pb-4"
         src={image}
-        height={250}
+        height={180}
         width={250}
         alt="Picture of the author"
       />

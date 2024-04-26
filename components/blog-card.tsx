@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+
+import AnimatedAttribution from "./animated-attribution";
+import MotionLink from "./motion-link";
 
 import {
   Card,
@@ -11,32 +13,17 @@ import {
 } from "@/components/ui/card";
 import { Blog } from "@/lib/definitions";
 
-const MotionLink = motion(Link);
-
 export default function BlogCard({ title, author, date, image, id }: Blog) {
   const arrow = {
     initial: { scale: 1, transition: { duration: 0.3 } },
     animate: { scale: 1.12, transition: { duration: 0.3 } },
   };
 
-  const underline = {
-    initial: {
-      scaleX: 0,
-      transformOrigin: "left",
-      transition: { duration: 0.3 },
-    },
-    animate: {
-      scaleX: 1,
-      transformOrigin: "left",
-      transition: { duration: 0.3 },
-    },
-  };
-
   return (
     <Card className="w-[18rem]">
       <CardHeader className="flex h-full flex-col gap-2">
         <MotionLink
-          href={`blog/${id}`}
+          href={`/blog/${id}`}
           initial="initial"
           animate="initial"
           whileHover="animate"
@@ -56,22 +43,10 @@ export default function BlogCard({ title, author, date, image, id }: Blog) {
         </MotionLink>
         <CardDescription className="!mt-auto flex flex-col">
           <span>{date.toDateString()}</span>
-          <span className="flex gap-1">
-            <span>by</span>
-            <MotionLink
-              initial="initial"
-              animate="initial"
-              whileHover="animate"
-              className="flex flex-col self-start"
-              href={`author/${author.id}`}
-            >
-              {author.name}
-              <motion.span
-                variants={underline}
-                className="h-[1px] bg-black dark:bg-white"
-              ></motion.span>
-            </MotionLink>
-          </span>
+          <AnimatedAttribution
+            href={`/author/${author.id}`}
+            name={author.name}
+          />
         </CardDescription>
       </CardHeader>
     </Card>
