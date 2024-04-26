@@ -23,6 +23,50 @@ export const authorData: Author[] = [
 
 export const blogData: Blog[] = [
   {
+    id: "f7e9f1d3-6217-4048-89df-9b5aeb6f7e89",
+    author: { name: "Thelma Jacobson", id: "0" },
+    sections: [
+      {
+        title: "Unveiling the Art of Baking",
+        content:
+          "Baking is more than just mixing ingredients and popping them into the oven—it's a delicate dance of precision and creativity. In this exploration of the baker's realm, we'll uncover the secrets behind crafting exquisite pastries, bread, and desserts that will tantalize your taste buds and delight your senses.",
+      },
+      {
+        title: "Preparation: A Baker's Ritual",
+        content:
+          "Before we embark on our baking adventure, let's prepare our workstation like a sacred altar. Gather your flour, sugar, butter, and eggs with reverence, ensuring each ingredient is of the highest quality. Equip yourself with measuring cups, mixing bowls, and a trusty whisk, ready to transform humble components into culinary masterpieces.",
+      },
+      {
+        title: "Mastery of Dough",
+        content:
+          "At the heart of baking lies the mastery of dough—a canvas waiting to be shaped and molded into delectable treats. Whether it's the flaky layers of puff pastry or the airy crumb of a perfect loaf, understanding the science behind dough is key. Join me as we knead, fold, and proof our way to pastry perfection.",
+      },
+      {
+        title: "Artistry in Pastry",
+        content:
+          "Pastry-making is a blend of precision and creativity, where technique meets artistry. From the delicate layers of a mille-feuille to the intricate latticework of a fruit tart, each pastry tells a story of craftsmanship and skill. Together, we'll explore the art of laminating, shaping, and decorating, turning simple ingredients into edible works of art.",
+      },
+      {
+        title: "Sweet Temptations: Desserts to Savor",
+        content:
+          "No baking journey is complete without indulging in sweet temptations that beckon from the pastry case. Dive into a world of decadent desserts, from rich chocolate truffles to ethereal soufflés, each bite a symphony of flavor and texture. Join me as we explore the alchemy of sugar, eggs, and butter, transforming them into confections that will enchant and delight.",
+      },
+      {
+        title: "Sharing the Joy of Baking",
+        content:
+          "Baking is a labor of love best shared with others, spreading joy and warmth with every slice of cake and every bite of cookie. Gather your loved ones and embark on a baking adventure together, creating memories that will last a lifetime. Whether it's a festive holiday gathering or a casual afternoon tea, the act of baking and sharing nourishes both body and soul.",
+      },
+      {
+        title: "A Sweet Farewell",
+        content:
+          "As our journey through the world of baking comes to a close, remember that the oven is always warm, and the possibilities are endless. Whether you're a novice baker or a seasoned pastry chef, there's always something new to discover and create. So, don your apron, preheat your oven, and let the aroma of freshly baked delights fill your home. Happy baking!",
+      },
+    ],
+    title: "Savoring Sweet Success: A Baker's Voyage into the World of Pastry",
+    date: new Date("2022-12-22T06:19:20.659Z"),
+    image: "https://picsum.photos/id/123/367/267",
+  },
+  {
     id: "1e2394fc-6edd-4d62-ac18-7d456a4aec85",
     author: { name: "Thelma Jacobson", id: "0" },
     sections: [
