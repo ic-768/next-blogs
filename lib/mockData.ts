@@ -8,7 +8,7 @@ export const authorData: Author[] = [
       "https://picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg",
     subtitle: "Journalist and Fiction Writer",
     description:
-      "I'm a versatile writer who delves into both journalism and fiction writing. With a keen eye for detail and a vivid imagination, I bring stories to life, capturing the essence of diverse cultures and human experiences.",
+      "I'm a versatile writer who delves into both journalism and fiction writing.",
   },
   {
     id: "1",
@@ -17,7 +17,7 @@ export const authorData: Author[] = [
     name: "Guillermo Jast",
     subtitle: "Entrepreneur and Nonfiction Author",
     description:
-      "I'm an entrepreneur and nonfiction author, passionate about sharing insights and strategies for personal and professional growth. Drawing from my own experiences and research, I aim to empower others to achieve their goals and navigate the complexities of modern life.",
+      "Entrepreneur and nonfiction author, passionate about sharing insights and strategies for personal and professional growth.",
   },
 ];
 

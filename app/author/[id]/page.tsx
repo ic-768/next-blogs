@@ -11,18 +11,20 @@ export default async function Author({
 
   if (!author) return;
 
-  const { name, image } = author;
+  const { name, image, description, subtitle } = author;
 
   return (
-    <span>
-      {name}
+    <div className="flex flex-col items-center">
       <Image
-        className="self-center"
+        className="self-center pb-4"
         src={image}
         height={250}
-        width={350}
+        width={250}
         alt="Picture of the author"
       />
-    </span>
+      <h2 className="font-bold">{name}</h2>
+      <span className="pb-8 text-gray-700">{subtitle}</span>
+      <p className="text-xl text-gray-700">{description}</p>
+    </div>
   );
 }
