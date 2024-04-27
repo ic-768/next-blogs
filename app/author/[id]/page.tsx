@@ -16,7 +16,7 @@ export default async function Author({
 
   const { name, image, description, subtitle } = author;
 
-  const skeleton = [1, 2, 3, 4, 5].map((i) => <BlogSkeleton key={i} />);
+  const skeleton = [1, 2, 3].map((i) => <BlogSkeleton key={i} />);
   const fallback = <ul className="flex flex-wrap gap-2 pt-8">{skeleton}</ul>;
 
   return (
