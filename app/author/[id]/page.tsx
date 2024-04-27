@@ -23,7 +23,7 @@ export default async function Author({
     <div className="flex flex-col items-center gap-4">
       <div className="flex flex-col items-center gap-2">
         <Image
-          className="self-center"
+          className="self-center rounded-md"
           src={image}
           height={180}
           width={250}
