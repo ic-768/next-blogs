@@ -1,4 +1,4 @@
-import BlogCard from "./blog-card";
+import AnimatedBlogs from "./animated-blogs";
 
 import { fetchBlogs, fetchBlogsById } from "@/lib/data";
 import { Blog } from "@/lib/definitions";
@@ -23,11 +23,7 @@ export default async function BlogList({
   return (
     <div className="flex flex-col items-center">
       {showCount && <h3>{numBlogs} posts</h3>}
-      <ul className="flex flex-wrap gap-2">
-        {blogs.map((d, i) => (
-          <BlogCard key={d.title + i} {...d} />
-        ))}
-      </ul>
+      <AnimatedBlogs blogs={blogs} />
     </div>
   );
 }

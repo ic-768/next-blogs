@@ -13,15 +13,24 @@ import {
 } from "@/components/ui/card";
 import { Blog } from "@/lib/definitions";
 
-export default function BlogCard({ title, author, date, image, id }: Blog) {
+export default function BlogCard({
+  title,
+  author,
+  date,
+  image,
+  id,
+  className,
+}: Blog & {
+  className?: string;
+}) {
   const arrow = {
     initial: { scale: 1, transition: { duration: 0.3 } },
     animate: { scale: 1.12, transition: { duration: 0.3 } },
   };
 
   return (
-    <Card className="w-[18rem]">
-      <CardHeader className="flex h-full flex-col gap-2">
+    <Card className={className}>
+      <CardHeader className="flex h-full min-h-[297px] w-[18rem] flex-col gap-2">
         <MotionLink
           className="flex flex-col gap-2"
           href={`/blog/${id}`}
