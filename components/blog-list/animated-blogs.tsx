@@ -11,10 +11,15 @@ export default function AnimatedBlogs({ blogs }: { blogs: Blog[] }) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <ul className="flex flex-wrap">
+    <motion.ul
+      className="flex flex-wrap"
+      transition={{ staggerChildren: 0.02 }}
+      initial="initial"
+      animate="animate"
+    >
       <AnimatePresence>
         {blogs.map((b, i) => (
-          <div
+          <motion.div
             key={b.id}
             className="relative p-2"
             onMouseEnter={() => setHoveredIndex(i)}
@@ -26,10 +31,18 @@ export default function AnimatedBlogs({ blogs }: { blogs: Blog[] }) {
                 layoutId="hoverOutline"
               />
             )}
-            <BlogCard {...b} />
-          </div>
+
+            <motion.div
+              variants={{
+                initial: { opacity: 0, scale: 0.5 },
+                animate: { opacity: 1, scale: 1 },
+              }}
+            >
+              <BlogCard {...b} />
+            </motion.div>
+          </motion.div>
         ))}
       </AnimatePresence>
-    </ul>
+    </motion.ul>
   );
 }

@@ -23,7 +23,7 @@ export default function BlogCard({
 }: Blog & {
   className?: string;
 }) {
-  const arrow = {
+  const imageVariants = {
     initial: { scale: 1, transition: { duration: 0.3 } },
     animate: { scale: 1.12, transition: { duration: 0.3 } },
   };
@@ -39,7 +39,7 @@ export default function BlogCard({
           whileHover="animate"
         >
           <div className="overflow-hidden">
-            <motion.div variants={arrow}>
+            <motion.div variants={imageVariants}>
               <Image
                 className="rounded"
                 src={image}
