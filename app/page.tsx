@@ -6,7 +6,7 @@ import BlogSkeleton from "@/components/blog-skeleton";
 export default async function Home() {
   const skeleton = [1, 2, 3].map((i) => <BlogSkeleton key={i} />);
   const fallback = (
-    <ul className="flex flex-wrap justify-center gap-4">{skeleton}</ul>
+    <ul className="flex flex-wrap justify-center">{skeleton}</ul>
   );
 
   return (
