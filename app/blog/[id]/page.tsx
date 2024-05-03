@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import Image from "next/image";
 
 import AnimatedAttribution from "@/components/animated-attribution";
-import { TracingBeam } from "@/components/ui/tracking-beam";
+import { TracingBeam } from "@/components/tracking-beam";
 import { fetchBlog } from "@/lib/data";
 
 export default async function Blog({ params }: { params: { id: string } }) {

@@ -10,10 +10,13 @@ import { Blog } from "@/lib/definitions";
 export default function AnimatedBlogs({ blogs }: { blogs: Blog[] }) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+  const onMouseEnter = (i: number) => () => setHoveredIndex(i);
+  const onMouseLeave = () => setHoveredIndex(null);
+
   return (
     <motion.ul
       className="flex flex-wrap"
-      transition={{ staggerChildren: 0.02 }}
+      transition={{ staggerChildren: 0.03 }}
       initial="initial"
       animate="animate"
     >
@@ -22,8 +25,8 @@ export default function AnimatedBlogs({ blogs }: { blogs: Blog[] }) {
           <motion.div
             key={b.id}
             className="relative p-2"
-            onMouseEnter={() => setHoveredIndex(i)}
-            onMouseLeave={() => setHoveredIndex(null)}
+            onMouseEnter={onMouseEnter(i)}
+            onMouseLeave={onMouseLeave}
           >
             {hoveredIndex === i && (
               <motion.div
