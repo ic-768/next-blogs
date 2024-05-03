@@ -1,9 +1,9 @@
-import clsx from "clsx";
-
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
+import { cn } from "@/lib/utils";
+
 export default function BlogSkeleton() {
-  const classes = clsx("w-[18rem]");
+  const classes = cn("w-[18rem]");
 
   return (
     <div className="p-2">
