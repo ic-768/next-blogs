@@ -1,4 +1,4 @@
-import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 
 import { cn } from "@/lib/utils";
 

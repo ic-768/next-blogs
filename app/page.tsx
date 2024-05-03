@@ -1,16 +1,11 @@
 import { Suspense } from "react";
 
 import BlogList from "@/components/blog-list/blog-list";
-import BlogSkeleton from "@/components/blog-skeleton";
+import BlogSkeletonList from "@/components/skeleton/blog-skeleton-list";
 
 export default async function Home() {
-  const skeleton = [1, 2, 3].map((i) => <BlogSkeleton key={i} />);
-  const fallback = (
-    <ul className="flex flex-wrap justify-center">{skeleton}</ul>
-  );
-
   return (
-    <Suspense fallback={fallback}>
+    <Suspense fallback={<BlogSkeletonList className="justify-center" />}>
       <BlogList />
     </Suspense>
   );
