@@ -8,9 +8,9 @@ export default function BlogSkeleton() {
   return (
     <div className="p-2">
       <Card className={classes}>
-        <CardHeader className="flex h-full min-h-[297px] w-[18rem] flex-col gap-2">
+        <CardHeader className="flex h-full min-h-[22rem] w-[18rem] flex-col gap-2">
           <div className="overflow-hidden">
-            <div className="h-[156px] w-[208px] animate-pulse bg-gray-300"></div>
+            <div className="h-[180px] w-full animate-pulse bg-gray-300"></div>
           </div>
           <CardTitle className="h-6 w-full animate-pulse bg-gray-300" />
           <CardDescription className="!mt-auto flex flex-col gap-2">

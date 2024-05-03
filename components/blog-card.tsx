@@ -30,7 +30,7 @@ export default function BlogCard({
 
   return (
     <Card className={className}>
-      <CardHeader className="flex h-full min-h-[297px] w-[18rem] flex-col gap-2">
+      <CardHeader className="flex h-full min-h-[22rem] w-[18rem] flex-col gap-2">
         <MotionLink
           className="flex flex-col gap-2"
           href={`/blog/${id}`}
@@ -41,7 +41,7 @@ export default function BlogCard({
           <div className="overflow-hidden">
             <motion.div variants={imageVariants}>
               <Image
-                className="rounded"
+                className="w-full rounded"
                 src={image}
                 height={156}
                 width={208}

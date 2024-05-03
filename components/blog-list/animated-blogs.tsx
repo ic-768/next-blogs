@@ -16,7 +16,7 @@ export default function AnimatedBlogs({ blogs }: { blogs: Blog[] }) {
   return (
     <motion.ul
       className="flex flex-wrap"
-      transition={{ staggerChildren: 0.03 }}
+      transition={{ staggerChildren: 0.1 }}
       initial="initial"
       animate="animate"
     >
