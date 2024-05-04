@@ -8,7 +8,7 @@ import Landing5 from "@/public/landing5.png";
 
 export default function TextSection() {
   return (
-    <div className="flex flex-col gap-16 pt-8">
+    <div className="grid grid-cols-1 gap-16 pt-8 md:grid-cols-2 lg:grid-cols-3">
       <TextCard title="Empower Your Creativity" image={Landing1}>
         Unlock your potential as a content creator with Next Blogs. Whether
         you're a seasoned blogger or just starting out, our intuitive platform
@@ -16,7 +16,7 @@ export default function TextSection() {
         designs to powerful editing tools, Blogify empowers you to express
         yourself with ease.
       </TextCard>
-      <TextCard title="Effortless Design" image={Landing2} right>
+      <TextCard title="Effortless Design" image={Landing2}>
         Say goodbye to complicated coding and design headaches. With Next Blogs,
         crafting a stunning blog is as simple as can be. Captivate your audience
         and enhance your content. Stand out from the crowd with
@@ -28,16 +28,12 @@ export default function TextSection() {
         posts go live with just a few clicks.Reach your audience whenever and
         wherever they are.
       </TextCard>
-      <TextCard title="Community and Support" image={Landing4} right>
+      <TextCard title="Community and Support" image={Landing4}>
         Join a thriving community of bloggers who are passionate about sharing
         their stories. Connect with like-minded individuals, exchange ideas, and
         gain valuable insights to help grow your audience.
       </TextCard>
-      <TextCard
-        title="Start Your Blogging Journey Today"
-        image={Landing5}
-        middle
-      >
+      <TextCard title="Start Your Blogging Journey Today" image={Landing5}>
         Ready to take the first step towards becoming a successful blogger? Sign
         up for Next Blogs now and embark on your blogging journey with
         confidence. Whether you're blogging for fun or aiming to turn your
