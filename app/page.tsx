@@ -19,9 +19,8 @@ export default function LandingPage() {
           />
         </Link>
       </Header>
-      <div className="flex min-h-full flex-col p-8"></div>
-      <div className="flex flex-col">
-        <SparkleSection />
+      <SparkleSection />
+      <div className="flex min-h-full flex-col p-8">
         <TextSection />
       </div>
     </>

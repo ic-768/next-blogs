@@ -17,7 +17,7 @@ export default function TextCard({
   image: StaticImageData;
 }) {
   const classes = cn(
-    "flex flex-col gap-4 p-8 shadow-xl bg-zinc-200  dark:bg-gray-700 rounded-xl dark:text-white text-zinc-900 ring-indigo-500 ring-1",
+    "flex flex-col gap-4 p-8 shadow shadow-indigo-300/90 bg-zinc-100 dark:bg-gray-700 rounded-xl dark:text-white text-zinc-900 ",
     className,
   );
 

@@ -5,6 +5,8 @@ import { Providers } from "./providers";
 
 import "./globals.css";
 
+import { cn } from "@/lib/utils";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,9 +19,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const classes = cn(inter.className, "bg-zinc-200 dark:bg-zinc-800");
+
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={inter.className}>
+      <body className={classes}>
         <Providers>{children}</Providers>
       </body>
     </html>
