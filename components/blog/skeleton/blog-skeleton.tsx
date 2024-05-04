@@ -1,13 +1,14 @@
-import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
-
-import { cn } from "@/lib/utils";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function BlogSkeleton() {
-  const classes = cn("w-[18rem]");
-
   return (
     <div className="p-2">
-      <Card className={classes}>
+      <Card className="w-[18rem]">
         <CardHeader className="flex h-full min-h-[22rem] w-[18rem] flex-col gap-2">
           <div className="overflow-hidden">
             <div className="h-[180px] w-full animate-pulse bg-gray-300"></div>

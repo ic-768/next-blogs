@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import AnimatedAttribution from "./animated-attribution";
-import MotionLink from "./motion-link";
+import AnimatedAttribution from "../animated-attribution";
+import MotionLink from "../motion-link";
 
 import {
   Card,

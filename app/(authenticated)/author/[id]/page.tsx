@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import Image from "next/image";
 
-import BlogList from "@/components/blog-list/blog-list";
-import BlogSkeletonList from "@/components/skeleton/blog-skeleton-list";
+import BlogList from "@/components/blog/blog-list";
+import BlogSkeletonList from "@/components/blog/skeleton/blog-skeleton-list";
 import { fetchAuthor } from "@/lib/data";
 
 export default async function Author({

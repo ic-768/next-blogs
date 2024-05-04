@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import BlogCard from "../blog-card";
+import BlogCard from "./blog-card";
 
 import { Blog } from "@/lib/definitions";
 
