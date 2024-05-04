@@ -11,9 +11,9 @@ export default function TextSection() {
     <div className="grid grid-cols-1 gap-16 pt-8 md:grid-cols-2 lg:grid-cols-3">
       <TextCard title="Empower Your Creativity" image={Landing1}>
         Unlock your potential as a content creator with Next Blogs. Whether
-        you're a seasoned blogger or just starting out, our intuitive platform
-        provides everything you need to bring your ideas to life. From sleek
-        designs to powerful editing tools, Blogify empowers you to express
+        you&apos;re a seasoned blogger or just starting out, our intuitive
+        platform provides everything you need to bring your ideas to life. From
+        sleek designs to powerful editing tools, Blogify empowers you to express
         yourself with ease.
       </TextCard>
       <TextCard title="Effortless Design" image={Landing2}>
@@ -36,7 +36,7 @@ export default function TextSection() {
       <TextCard title="Start Your Blogging Journey Today" image={Landing5}>
         Ready to take the first step towards becoming a successful blogger? Sign
         up for Next Blogs now and embark on your blogging journey with
-        confidence. Whether you're blogging for fun or aiming to turn your
+        confidence. Whether you&apos;re blogging for fun or aiming to turn your
         passion into a career, Next Blogs is the perfect platform to help you
         achieve your goals.
       </TextCard>
