@@ -33,10 +33,18 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     }),
   ],
   callbacks: {
+    // TODO get this working properly
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
-      const isOnDashboard = nextUrl.pathname.startsWith("/dashboard");
-      if (isOnDashboard) {
+
+      const isProtectedRoute =
+        !nextUrl.pathname.startsWith("/sign-in") && nextUrl.pathname !== "/";
+
+      if (isLoggedIn && nextUrl.pathname.startsWith("/sign-in")) {
+        return Response.redirect(new URL("/dashboard", nextUrl));
+      }
+
+      if (isProtectedRoute) {
         if (isLoggedIn) return true;
         return false; // Redirect unauthenticated users to login page
       } else if (isLoggedIn) {
@@ -45,4 +53,5 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       return true;
     },
   },
+  pages: { signIn: "/sign-in", signOut: "/" },
 });
