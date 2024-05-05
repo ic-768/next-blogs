@@ -1,7 +1,7 @@
-import AnimatedBlogs from "./animated-blogs";
-
 import { fetchBlogs, fetchBlogsById } from "@/lib/data";
 import { Blog } from "@/lib/definitions";
+
+import AnimatedBlogs from "./animated-blogs";
 
 export default async function BlogList({
   id,

@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+
 import Image from "next/image";
 
 import BlogList from "@/components/blog/blog-list";

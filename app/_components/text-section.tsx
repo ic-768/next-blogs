@@ -1,10 +1,10 @@
-import TextCard from "./text-card";
-
 import Landing1 from "@/public/landing1.png";
 import Landing2 from "@/public/landing2.png";
 import Landing3 from "@/public/landing3.png";
 import Landing4 from "@/public/landing4.png";
 import Landing5 from "@/public/landing5.png";
+
+import TextCard from "./text-card";
 
 export default function TextSection() {
   return (

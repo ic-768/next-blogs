@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+
 import { AnimatePresence, motion } from "framer-motion";
 
-import BlogCard from "./blog-card";
-
 import { Blog } from "@/lib/definitions";
+
+import BlogCard from "./blog-card";
 
 export default function AnimatedBlogs({ blogs }: { blogs: Blog[] }) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);

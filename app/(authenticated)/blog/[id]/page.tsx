@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+
 import Image from "next/image";
 
 import AnimatedAttribution from "@/components/animated-attribution";

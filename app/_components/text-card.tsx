@@ -1,7 +1,8 @@
 "use client";
 import { ReactNode } from "react";
-import { motion } from "framer-motion";
+
 import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 

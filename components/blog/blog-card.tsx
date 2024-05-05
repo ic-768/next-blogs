@@ -1,9 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
-
-import AnimatedAttribution from "../animated-attribution";
-import MotionLink from "../motion-link";
+import { motion } from "framer-motion";
 
 import {
   Card,
@@ -12,6 +9,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Blog } from "@/lib/definitions";
+
+import AnimatedAttribution from "../animated-attribution";
+import MotionLink from "../motion-link";
 
 export default function BlogCard({
   title,

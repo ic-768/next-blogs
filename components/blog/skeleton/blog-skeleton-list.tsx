@@ -1,6 +1,6 @@
-import BlogSkeleton from "./blog-skeleton";
-
 import { cn } from "@/lib/utils";
+
+import BlogSkeleton from "./blog-skeleton";
 
 type BlogSkeletonListProps = {
   className?: string;

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Header from "@/components/ui/header";
+
 import logoImage from "../../public/logo.jpg";
 import { SignOutButton } from "../_components/sign-out-button";
-
-import Header from "@/components/ui/header";
 
 export default function Layout({
   children,
