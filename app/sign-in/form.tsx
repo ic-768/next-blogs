@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { signIn } from "next-auth/react";
 
-export default function LoginForm() {
+export default function SignInForm() {
   const eRef = useRef<HTMLInputElement>(null);
   const pRef = useRef<HTMLInputElement>(null);
 
