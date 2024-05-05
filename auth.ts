@@ -1,7 +1,10 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 
+import { authConfig } from "./auth.config";
+
 export const { handlers, signIn, signOut, auth } = NextAuth({
+  ...authConfig,
   providers: [
     Credentials({
       // You can specify which fields should be submitted, by adding keys to the `credentials` object.
@@ -32,26 +35,5 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       },
     }),
   ],
-  callbacks: {
-    // TODO get this working properly
-    authorized({ auth, request: { nextUrl } }) {
-      const isLoggedIn = !!auth?.user;
-
-      const isProtectedRoute =
-        !nextUrl.pathname.startsWith("/sign-in") && nextUrl.pathname !== "/";
-
-      if (isLoggedIn && nextUrl.pathname.startsWith("/sign-in")) {
-        return Response.redirect(new URL("/dashboard", nextUrl));
-      }
-
-      if (isProtectedRoute) {
-        if (isLoggedIn) return true;
-        return false; // Redirect unauthenticated users to login page
-      } else if (isLoggedIn) {
-        return Response.redirect(new URL("/dashboard", nextUrl));
-      }
-      return true;
-    },
-  },
-  pages: { signIn: "/sign-in", signOut: "/" },
+  pages: { signIn: "/sign-in" },
 });
