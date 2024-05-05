@@ -1,6 +1,6 @@
+import { SignInButton } from "@/components/auth/sign-in-button";
 import Header from "@/components/ui/header";
 
-import { SignInButton } from "./_components/sign-in-button";
 import SparkleSection from "./_components/sparkle-section";
 import TextSection from "./_components/text-section";
 
