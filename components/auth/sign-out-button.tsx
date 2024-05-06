@@ -1,5 +1,7 @@
 import { signOut } from "@/auth";
 
+import WithUnderline from "../ui/with-underline";
+
 export function SignOutButton() {
   return (
     <form
@@ -8,7 +10,9 @@ export function SignOutButton() {
         await signOut({ redirectTo: "/" });
       }}
     >
-      <button type="submit">Sign Out</button>
+      <WithUnderline>
+        <button type="submit">Sign Out</button>
+      </WithUnderline>
     </form>
   );
 }

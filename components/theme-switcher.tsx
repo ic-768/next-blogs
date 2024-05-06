@@ -22,7 +22,7 @@ export default function ThemeSwitcher() {
   const onToggle = () => setTheme(resolvedTheme === "dark" ? "light" : "dark");
 
   return (
-    <div className="ml-auto flex items-center gap-2">
+    <div className="flex items-center gap-2">
       <Label className="cursor-pointer" htmlFor="theme">
         <Sun />
       </Label>

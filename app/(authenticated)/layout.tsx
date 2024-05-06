@@ -12,7 +12,7 @@ export default function Layout({
   return (
     <>
       <Header>
-        <Link href="/">
+        <Link className="mr-auto" href="/">
           <Image
             className="w-20 rounded-md dark:outline dark:outline-1 dark:outline-white"
             src={logoImage}

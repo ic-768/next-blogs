@@ -1,15 +1,22 @@
 "use client";
 
+import { ReactNode } from "react";
+
 import { motion } from "framer-motion";
 
 import MotionLink from "../motion-link";
 
 interface WithUnderlineProps {
-  text: string;
+  text?: string;
   href?: string;
+  children?: ReactNode;
 }
 
-export default function WithUnderline({ href = "", text }: WithUnderlineProps) {
+export default function WithUnderline({
+  href = "",
+  text,
+  children,
+}: WithUnderlineProps) {
   const props = {
     initial: "initial",
     animate: "initial",
@@ -20,7 +27,7 @@ export default function WithUnderline({ href = "", text }: WithUnderlineProps) {
 
   const content = (
     <>
-      {text}
+      {text || children}
       <motion.span
         variants={{
           initial: {
