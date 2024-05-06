@@ -16,7 +16,7 @@ export default function ThemeSwitcher() {
     setIsMounted(true);
   }, []);
 
-  if (!isMounted) return null;
+  if (!isMounted) return <div className="w-[88px]" />;
 
   const isDarkTheme = resolvedTheme === "dark";
   const onToggle = () => setTheme(resolvedTheme === "dark" ? "light" : "dark");
