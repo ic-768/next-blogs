@@ -26,8 +26,8 @@ export default function TextCard({
     <motion.div
       className={classes}
       initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+      viewport={{ once: true, margin: "-30px" }}
     >
       <Image className="w-16" src={image} alt="" />
       <h2 className="font-bold">{title}</h2>
