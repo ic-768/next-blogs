@@ -2,7 +2,9 @@ A basic blog website built with NextJS
 
 ## NextBlogs
 
-Run it just like any other create-next-app:
+Add a .env.local file at the root of the project and add `AUTH_SECRET=some_random_string` for the auth system to work properly.
+
+Then you just run it like any other create-next-app:
 
 ```bash
 npm i && npm run dev
