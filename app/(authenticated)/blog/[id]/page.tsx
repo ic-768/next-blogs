@@ -10,7 +10,6 @@ export default async function Blog({ params }: { params: { id: string } }) {
   const id = params.id;
   const blog = await fetchBlog(id);
 
-  console.log(blog);
   if (!blog) return;
 
   const { author, title, date, image, sections } = blog;
