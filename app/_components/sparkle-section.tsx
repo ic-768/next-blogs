@@ -4,11 +4,11 @@ import { SparklesCore } from "@/components/sparkles";
 
 export default function SparkleSection() {
   return (
-    <div className="flex h-[20rem] w-full flex-col items-center justify-center overflow-hidden rounded bg-black md:h-[40rem]">
+    <div className="flex h-[20rem] w-full flex-col items-center justify-center overflow-hidden rounded md:h-[40rem]">
       <h1 className="relative text-center text-3xl font-bold text-white md:text-7xl lg:text-9xl">
         Next Blogs
       </h1>
-      <div className="relative h-40 w-[40rem]">
+      <div className="relative mt-4 h-40 w-[40rem] sm:w-4/5">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
         <div className="absolute inset-x-20 top-0 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
@@ -25,7 +25,7 @@ export default function SparkleSection() {
         />
 
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 h-full w-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
+        <div className="absolute inset-0 h-full w-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
       </div>
     </div>
   );
