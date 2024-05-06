@@ -26,6 +26,10 @@ ul {
   @apply my-6 ml-6 list-disc [&>li]:mt-2;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   min-height: 100vh;
 }
