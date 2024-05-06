@@ -23,7 +23,7 @@ export default function SignInForm() {
 
   return (
     <div className="flex h-screen flex-col justify-center">
-      <div className="mx-auto w-full max-w-md rounded bg-white p-4 shadow dark:bg-black md:rounded-2xl md:p-8">
+      <div className="mx-auto w-4/5 max-w-md rounded bg-white p-4 shadow dark:bg-black sm:w-full md:rounded-2xl md:p-8">
         <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
           Welcome to NextBlogs
         </h2>
