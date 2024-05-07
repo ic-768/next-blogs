@@ -10,11 +10,6 @@ export default async function BlogList({
   showCount?: boolean;
 }) {
   const blogs = await (id ? fetchBlogsById(id) : fetchBlogs());
-
-  console.log(
-    "in list",
-    blogs.map((b) => b.author),
-  );
   const numBlogs = blogs.length;
 
   return (

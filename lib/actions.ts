@@ -18,7 +18,7 @@ export const addPost = async (formData: FormData) => {
 
   newPost.sections[0].content = content;
   blogData.push(newPost);
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 3000));
 
   revalidatePath("/dashboard");
   redirect("/dashboard");
