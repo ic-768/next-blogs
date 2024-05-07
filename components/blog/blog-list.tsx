@@ -21,9 +21,9 @@ export default async function BlogList({
   const numBlogs = blogs.length;
 
   return (
-    <div className="flex flex-col items-center">
+    <>
       {showCount && <h3>{numBlogs} posts</h3>}
       <AnimatedBlogs blogs={blogs} />
-    </div>
+    </>
   );
 }

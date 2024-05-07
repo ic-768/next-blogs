@@ -35,7 +35,7 @@ export default async function Author({
           {description}
         </p>
       </div>
-      <div className="pt-6">
+      <div className="flex flex-col items-center pt-6">
         <Suspense fallback={<BlogSkeletonList className="pt-8" />}>
           <BlogList showCount id={id} />
         </Suspense>
