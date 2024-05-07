@@ -7,7 +7,6 @@ import TextSection from "./_components/text-section";
 export default function LandingPage() {
   return (
     <>
-      test
       <Header>
         <SignInButton />
       </Header>
