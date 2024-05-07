@@ -11,7 +11,7 @@ export default function BlogSkeleton() {
       <Card>
         <CardHeader className="flex h-full min-h-[19rem] w-[14rem] flex-col gap-2 sm:min-h-[22rem] sm:w-[18rem]">
           <div className="overflow-hidden">
-            <div className="h-[125px] w-full animate-pulse bg-gray-300 sm:h-[180px]"></div>
+            <div className="h-44 w-full animate-pulse bg-gray-300 sm:h-52 sm:h-[180px]"></div>
           </div>
           <CardTitle className="h-6 w-full animate-pulse bg-gray-300" />
           <CardDescription className="!mt-auto flex flex-col gap-2">

@@ -41,7 +41,7 @@ export default function BlogCard({
           <div className="overflow-hidden">
             <motion.div variants={imageVariants}>
               <Image
-                className="w-full rounded"
+                className="h-44 w-full rounded sm:h-52"
                 src={image}
                 height={156}
                 width={208}

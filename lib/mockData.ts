@@ -2,7 +2,7 @@ import { Author, Blog } from "./definitions";
 
 export const dummyPost = {
   id: "f789f1d3-6217-4048-89df-9b5aeb6f7e89",
-  author: { name: "Your username!", id: "3" },
+  author: { name: "Your Name Here :)", id: "2" },
   sections: [
     {
       title: "",
@@ -11,23 +11,21 @@ export const dummyPost = {
   ],
   title: "Test",
   date: new Date("2022-12-22T06:19:20.659Z"),
-  image: "https://picsum.photos/id/123/367/267",
+  image: "https://picsum.photos/id/135/350.jpg",
 };
 
 export const authorData: Author[] = [
   {
     id: "0",
     name: "Thelma Jacobson",
-    image:
-      "https://picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg",
+    image: "https://picsum.photos/id/64/350",
     subtitle: "Journalist and Fiction Writer",
     description:
       "I'm a versatile writer who delves into both journalism and fiction writing.",
   },
   {
     id: "1",
-    image:
-      "https://picsum.photos/id/349/3264/2176.jpg?hmac=WNt0QoaZyFRaiL5yitDV4LOXzdHV5Z9tHUxbc6KdBSY",
+    image: "https://picsum.photos/id/349/350",
     name: "Guillermo Jast",
     subtitle: "Entrepreneur and Nonfiction Author",
     description:
@@ -78,7 +76,7 @@ export const blogData: Blog[] = [
     ],
     title: "Savoring Sweet Success: A Baker's Voyage into the World of Pastry",
     date: new Date("2022-12-22T06:19:20.659Z"),
-    image: "https://picsum.photos/id/123/367/267",
+    image: "https://picsum.photos/id/123/350",
   },
   {
     id: "1e2394fc-6edd-4d62-ac18-7d456a4aec85",
@@ -122,7 +120,7 @@ export const blogData: Blog[] = [
     ],
     title: "Unveiling Culinary Delights: A Beginner's Odyssey in the Kitchen",
     date: new Date("2022-11-22T03:29:50.659Z"),
-    image: "https://picsum.photos/seed/FaNSsy/640/480",
+    image: "https://picsum.photos/id/28/350.jpg",
   },
   {
     id: "0ad0d868-1545-4ea1-b754-51231dc1f6bf",
@@ -166,6 +164,6 @@ export const blogData: Blog[] = [
     ],
     title: "Capturing Moments in Time",
     date: new Date("2022-05-25T19:53:35.246Z"),
-    image: "https://picsum.photos/seed/NubcH/640/480",
+    image: "https://picsum.photos/id/24/350.jpg",
   },
 ];
