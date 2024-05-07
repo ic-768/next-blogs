@@ -8,10 +8,10 @@ import {
 export default function BlogSkeleton() {
   return (
     <div className="p-2">
-      <Card className="w-[18rem]">
-        <CardHeader className="flex h-full min-h-[22rem] w-[18rem] flex-col gap-2">
+      <Card>
+        <CardHeader className="flex h-full min-h-[19rem] w-[14rem] flex-col gap-2 sm:min-h-[22rem] sm:w-[18rem]">
           <div className="overflow-hidden">
-            <div className="h-[180px] w-full animate-pulse bg-gray-300"></div>
+            <div className="h-[125px] w-full animate-pulse bg-gray-300 sm:h-[180px]"></div>
           </div>
           <CardTitle className="h-6 w-full animate-pulse bg-gray-300" />
           <CardDescription className="!mt-auto flex flex-col gap-2">

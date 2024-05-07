@@ -7,7 +7,7 @@ type BlogSkeletonListProps = {
 };
 export default function BlogSkeletonList({ className }: BlogSkeletonListProps) {
   const skeleton = [1, 2, 3].map((i) => <BlogSkeleton key={i} />);
-  const classes = cn("flex flex-wrap", className);
+  const classes = cn("flex flex-wrap justify-center", className);
 
   return <ul className={classes}>{skeleton}</ul>;
 }

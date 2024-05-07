@@ -14,7 +14,7 @@ export default function Layout({
       <Header>
         <Link className="mr-auto" href="/">
           <Image
-            className="w-20 rounded-md dark:outline dark:outline-1 dark:outline-white"
+            className="w-16 rounded-md dark:outline dark:outline-1 dark:outline-white"
             src={logoImage}
             alt="logo"
           />
