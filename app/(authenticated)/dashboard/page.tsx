@@ -6,7 +6,6 @@ import BlogList from "@/components/blog/blog-list";
 import BlogSkeletonList from "@/components/blog/skeleton/blog-skeleton-list";
 import Pencil from "@/components/ui/icons/pencil";
 
-export const revalidate = 0;
 export default async function Home() {
   return (
     <Suspense fallback={<BlogSkeletonList className="justify-center" />}>
