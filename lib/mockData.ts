@@ -1,11 +1,11 @@
 import { Author, Blog } from "./definitions";
 
-export const newPost = {
+export const dummyPost = {
   id: "f789f1d3-6217-4048-89df-9b5aeb6f7e89",
-  author: { name: "Testy Testerson", id: "3" },
+  author: { name: "Your username!", id: "3" },
   sections: [
     {
-      title: "Test",
+      title: "",
       content: "Test",
     },
   ],

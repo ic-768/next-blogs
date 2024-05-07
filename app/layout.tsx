@@ -19,7 +19,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const classes = cn(inter.className, "bg-zinc-200 dark:bg-zinc-800");
+  const classes = cn(inter.className, "bg-zinc-100 dark:bg-zinc-900");
 
   return (
     <html suppressHydrationWarning lang="en">
