@@ -6,6 +6,9 @@ import BlogList from "@/components/blog/blog-list";
 import BlogSkeletonList from "@/components/blog/skeleton/blog-skeleton-list";
 import Pencil from "@/components/ui/icons/pencil";
 
+// only using this because invalidating the path doesn't work because fetch isn't involved in getting the data
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   return (
     <Suspense fallback={<BlogSkeletonList className="justify-center" />}>

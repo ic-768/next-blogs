@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 
 import { blogData, dummyPost } from "./mockData";
 
@@ -17,6 +18,7 @@ export const addPost = async (formData: FormData) => {
 
   newPost.sections[0].content = content;
   blogData.push(newPost);
-  revalidatePath("/dashboard");
   await new Promise((resolve) => setTimeout(resolve, 3000));
+  revalidatePath("/dashboard");
+  redirect("/dashboard");
 };
