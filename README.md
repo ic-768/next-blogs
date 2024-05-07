@@ -1,4 +1,4 @@
-A basic blog website built with NextJS deployed at [this link](https://next-blogs-psi.vercel.app).
+A basic blog website built with NextJS deployed at [this link](https://next-blogs.onrender.com).
 
 ## NextBlogs
 
