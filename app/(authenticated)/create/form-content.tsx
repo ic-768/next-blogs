@@ -14,10 +14,18 @@ export default function FormContent() {
     <>
       <div className="flex w-full flex-col items-center gap-4">
         <h2 className="text-nowrap">My new blog, titled:</h2>
-        <Textarea name="title" className="w-full text-3xl font-semibold" />
+        <Textarea
+          placeholder="My awesome blog"
+          name="title"
+          className="w-full text-center text-3xl font-semibold"
+        />
       </div>
 
-      <Textarea name="content" rows={20} />
+      <Textarea
+        placeholder="My awesome blog content"
+        name="content"
+        rows={20}
+      />
       <Button className="self-center">Submit</Button>
     </>
   );
