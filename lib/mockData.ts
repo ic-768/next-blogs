@@ -1,5 +1,19 @@
 import { Author, Blog } from "./definitions";
 
+export const newPost = {
+  id: "f789f1d3-6217-4048-89df-9b5aeb6f7e89",
+  author: { name: "Testy Testerson", id: "3" },
+  sections: [
+    {
+      title: "Test",
+      content: "Test",
+    },
+  ],
+  title: "Test",
+  date: new Date("2022-12-22T06:19:20.659Z"),
+  image: "https://picsum.photos/id/123/367/267",
+};
+
 export const authorData: Author[] = [
   {
     id: "0",

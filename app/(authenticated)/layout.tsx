@@ -14,14 +14,14 @@ export default function Layout({
       <Header>
         <Link className="mr-auto" href="/">
           <Image
-            className="w-16 rounded-md dark:outline dark:outline-1 dark:outline-white"
+            className="w-16 min-w-16 rounded-md dark:outline dark:outline-1 dark:outline-white"
             src={logoImage}
             alt="logo"
           />
         </Link>
         <SignOutButton />
       </Header>
-      <div className="flex min-h-full flex-col p-8">{children}</div>
+      <div className="flex min-h-full flex-col gap-4 p-8">{children}</div>
     </>
   );
 }

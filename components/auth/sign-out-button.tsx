@@ -11,7 +11,9 @@ export function SignOutButton() {
       }}
     >
       <WithUnderline>
-        <button type="submit">Sign Out</button>
+        <button className="text-nowrap" type="submit">
+          Sign Out
+        </button>
       </WithUnderline>
     </form>
   );
