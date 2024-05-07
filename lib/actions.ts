@@ -16,6 +16,5 @@ export const addPost = async (formData: FormData) => {
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
   revalidatePath("/dashboard");
-
   redirect("/dashboard");
 };

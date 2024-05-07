@@ -1,14 +1,5 @@
-"use client";
-import ClipLoader from "react-spinners/ClipLoader";
+import Loader from "@/components/ui/loader";
 
 export default function Loading() {
-  return (
-    <ClipLoader
-      color="#0ea5e9"
-      className="absolute inset-0 m-auto"
-      size={70}
-      aria-label="Loading Spinner"
-      data-testid="loader"
-    />
-  );
+  return <Loader />;
 }
