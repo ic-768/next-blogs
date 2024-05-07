@@ -9,7 +9,7 @@ export default function BlogSkeleton() {
   return (
     <div className="p-2">
       <Card>
-        <CardHeader className="flex h-full min-h-[19rem] w-[14rem] flex-col gap-2 sm:min-h-[22rem] sm:w-[18rem]">
+        <CardHeader className="flex h-full min-h-[21rem] w-[14rem] flex-col gap-2 sm:min-h-[24rem] sm:w-[18rem]">
           <div className="overflow-hidden">
             <div className="h-44 w-full animate-pulse bg-gray-300 sm:h-52 sm:h-[180px]"></div>
           </div>

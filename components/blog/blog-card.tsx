@@ -30,7 +30,7 @@ export default function BlogCard({
 
   return (
     <Card className={className}>
-      <CardHeader className="flex h-full min-h-[19rem] w-[14rem] flex-col gap-2 sm:min-h-[22rem] sm:w-[18rem]">
+      <CardHeader className="flex h-full min-h-[21rem] w-[14rem] flex-col gap-2 sm:min-h-[24rem] sm:w-[18rem]">
         <MotionLink
           className="flex flex-col gap-2"
           href={`/blog/${id}`}

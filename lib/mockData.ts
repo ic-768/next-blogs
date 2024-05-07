@@ -31,6 +31,13 @@ export const authorData: Author[] = [
     description:
       "Entrepreneur and nonfiction author, passionate about sharing insights and strategies for personal and professional growth.",
   },
+  {
+    id: "2",
+    image: "https://picsum.photos/id/281/350",
+    name: "Your Name Here!",
+    subtitle: "Professional blog app reviewer",
+    description: "Just an amazing human, checking out a hobby project.",
+  },
 ];
 
 export const blogData: Blog[] = [
