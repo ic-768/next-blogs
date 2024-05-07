@@ -173,4 +173,28 @@ export const blogData: Blog[] = [
     date: new Date("2022-05-25T19:53:35.246Z"),
     image: "https://picsum.photos/id/24/350.jpg",
   },
+  {
+    id: "f7e9f1d3-6217-4048-89df-9x5aeb6f7e89",
+    author: { name: "Thelma Jacobson", id: "0" },
+    sections: [
+      {
+        title: "Riding the Waves: A Journey into the World of Surfing",
+        content:
+          "Surfing is more than just a sport—it's a way of life, a dance with the ocean's rhythm that exhilarates the soul. In this exploration of the surfer's realm, we'll dive into the art of catching waves, mastering the board, and embracing the sheer thrill of riding nature's liquid playground.",
+      },
+      {
+        title: "The Call of the Ocean",
+        content:
+          "For surfers, the ocean is more than just water—it's a calling, a magnetic force drawing them to its depths. From the first sight of a rolling wave to the distant sound of crashing surf, every surfer feels the irresistible pull of the sea, beckoning them to paddle out and meet its embrace.",
+      },
+      {
+        title: "Mastering the Board",
+        content:
+          "At the heart of surfing lies the mastery of the board—a symbiotic relationship between rider and craft. Whether it's carving graceful arcs on a longboard or testing the limits of balance on a shortboard, surfers devote countless hours to honing their skills.",
+      },
+    ],
+    title: "Surfing: Riding the Waves",
+    date: new Date("2024-05-07T12:00:00.000Z"),
+    image: "https://picsum.photos/id/279/350",
+  },
 ];

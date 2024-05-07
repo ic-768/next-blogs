@@ -12,11 +12,11 @@ export const addPost = async (formData: FormData) => {
   const newPost = {
     ...dummyPost,
     title,
-    id: String(blogData.length),
+    id: String(blogData.length), // this would cause an issue if this was a real app
     image: `${dummyPost.image}?t=${Date.now()}`, // to stop cache getting the same image
   };
-  newPost.sections[0].content = content;
 
+  newPost.sections[0].content = content;
   blogData.push(newPost);
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
