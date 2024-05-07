@@ -6,6 +6,8 @@ import BlogList from "@/components/blog/blog-list";
 import BlogSkeletonList from "@/components/blog/skeleton/blog-skeleton-list";
 import Pencil from "@/components/ui/icons/pencil";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   return (
     <Suspense fallback={<BlogSkeletonList className="justify-center" />}>
