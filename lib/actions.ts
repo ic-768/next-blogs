@@ -1,11 +1,14 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
+import { revalidatePath, unstable_noStore } from "next/cache";
 import { redirect } from "next/navigation";
 
 import { blogData, dummyPost } from "./mockData";
 
 export const addPost = async (formData: FormData) => {
+  // Add noStore() here to prevent the response from being cached.
+  // This is equivalent to in fetch(..., {cache: 'no-store'}).
+  unstable_noStore();
   const title = formData.get("title") as string;
   const content = formData.get("content") as string;
 
