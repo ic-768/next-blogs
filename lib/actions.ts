@@ -9,11 +9,16 @@ export const addPost = async (formData: FormData) => {
   const title = formData.get("title") as string;
   const content = formData.get("content") as string;
 
-  const newPost = { ...dummyPost, title, id: String(blogData.length) };
+  const newPost = {
+    ...dummyPost,
+    title,
+    id: String(blogData.length),
+    image: `${dummyPost.image}?t=${Date.now()}`, // to stop cache getting the same image
+  };
   newPost.sections[0].content = content;
 
   blogData.push(newPost);
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   revalidatePath("/dashboard");
   redirect("/dashboard");

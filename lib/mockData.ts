@@ -11,7 +11,7 @@ export const dummyPost = {
   ],
   title: "Test",
   date: new Date("2022-12-22T06:19:20.659Z"),
-  image: "https://picsum.photos/id/135/350.jpg",
+  image: "https://picsum.photos/350.jpg",
 };
 
 export const authorData: Author[] = [
