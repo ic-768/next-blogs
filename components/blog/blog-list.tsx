@@ -1,5 +1,4 @@
 import { fetchBlogs, fetchBlogsById } from "@/lib/data";
-import { Blog } from "@/lib/definitions";
 
 import AnimatedBlogs from "./animated-blogs";
 
@@ -10,13 +9,7 @@ export default async function BlogList({
   id?: string;
   showCount?: boolean;
 }) {
-  let blogs: Blog[];
-
-  if (!id) {
-    blogs = await fetchBlogs();
-  } else {
-    blogs = await fetchBlogsById(id);
-  }
+  const blogs = await (id ? fetchBlogsById(id) : fetchBlogs());
 
   const numBlogs = blogs.length;
 
