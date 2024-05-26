@@ -1,5 +1,3 @@
-"use client";
-
 import { Sparkles } from "@/components/sparkles";
 
 export default function SparkleSection() {
