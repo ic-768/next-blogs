@@ -45,7 +45,7 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative mx-auto h-full w-full max-w-4xl", className)}
+      className={cn("relative mx-auto size-full max-w-4xl", className)}
     >
       <div className="absolute -left-14 top-3 lg:-left-20">
         <motion.div

@@ -32,7 +32,7 @@ export default function AnimatedBlogs({ blogs }: { blogs: Blog[] }) {
           >
             {hoveredIndex === i && (
               <motion.div
-                className="absolute inset-0 -z-10 block h-full w-full rounded-xl bg-slate-300 dark:bg-slate-500"
+                className="absolute inset-0 -z-10 block size-full rounded-xl bg-slate-300 dark:bg-slate-500"
                 layoutId="hoverOutline"
               />
             )}
