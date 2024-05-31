@@ -6,7 +6,7 @@ export default function SparkleSection() {
       <h1 className="relative text-center text-3xl font-bold dark:text-white md:text-7xl lg:text-9xl">
         NextBlogs
       </h1>
-      <div className="relative mt-4 h-40 w-[40rem] sm:w-4/5">
+      <div className="relative mt-4 h-48 w-[40rem] sm:w-4/5">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
         <div className="absolute inset-x-20 top-0 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
@@ -16,7 +16,7 @@ export default function SparkleSection() {
         <Sparkles />
 
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 size-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
+        <div className="absolute inset-0 size-full bg-zinc-100 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)] dark:bg-zinc-900" />
       </div>
     </div>
   );
